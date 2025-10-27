@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ • WD4E Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <div class="container navbar">
+      <h1>WD4E Project</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+          <li><a href="gallery.html">Thư viện ảnh (Grid)</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" tabindex="-1">
+    <section class="hero">
+      <div class="card">
+        <h2>Yêu cầu đã áp dụng</h2>
+        <ul>
+          <li>Liên kết <strong>Skip to Main Content</strong> chỉ hiển thị khi <code>:focus</code>.</li>
+          <li>Điều hướng có thể truy cập, dùng <strong>flex</strong> và trạng thái <strong>:hover</strong>, <strong>:focus-visible</strong>.</li>
+          <li>Ảnh được tạo kiểu theo <strong>mô hình hộp</strong> (border, padding, border-radius).</li>
+          <li>Dùng <strong>Grid</strong> (khối hero/cards) và <strong>Flex</strong> (navbar).</li>
+          <li>Áp dụng <strong>:hover</strong> &amp; <strong>:nth-child()</strong> (xem trang Thư viện ảnh).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img class="box-image" src="https://picsum.photos/id/1025/800/500" alt="Ảnh minh hoạ chú chó nhìn sang phải">
+      </div>
+    </section>
+
+    <section class="cards" aria-labelledby="features">
+      <h2 id="features" class="sr-only">Tính năng</h2>
+      <article class="card">
+        <h3>Hợp lệ HTML/CSS</h3>
+        <p>Kiểm tra bằng <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> và <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a>.</p>
+      </article>
+      <article class="card">
+        <h3>Truy cập tốt</h3>
+        <p>Tiêu đề có thứ bậc, màu tương phản cao, liên kết có trạng thái focus rõ.</p>
+      </article>
+      <article class="card">
+        <h3>Hiệu ứng dịu nhẹ</h3>
+        <p>Hover thêm đổ bóng, dịch chuyển nhẹ giúp tăng khả năng nhận biết có thể tương tác.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 • WD4E Project • <a href="gallery.html">Xem thư viện</a></p>
+      <p><a href="https://wave.webaim.org/" target="_blank" rel="noopener">Kiểm tra WAVE</a></p>
+    </div>
+  </footer>
+</body>
+</html>

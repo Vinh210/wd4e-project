@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giới thiệu • WD4E Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <div class="container navbar">
+      <h1>WD4E Project</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gallery.html">Thư viện ảnh (Grid)</a></li>
+          <li><a href="about.html" aria-current="page">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" tabindex="-1">
+    <h2>Giới thiệu & Hướng dẫn nộp bài</h2>
+    <p>Trang này sử dụng <strong>flex</strong> cho điều hướng, và hình minh hoạ được tạo kiểu bằng <em>mô hình hộp</em>.</p>
+
+    <section class="hero">
+      <div class="card">
+        <h3>Hướng dẫn kiểm tra</h3>
+        <ol>
+          <li>Xác thực HTML/CSS bằng <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a>.</li>
+          <li>Kiểm tra khả năng truy cập bằng <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a>.</li>
+          <li>Đảm bảo tương phản màu: văn bản đen (#111) trên nền trắng đạt chuẩn.</li>
+          <li>Đảm bảo liên kết <em>Skip to main content</em> hiển thị khi <code>:focus</code>.</li>
+          <li>Kiểm tra liên kết CSS đã gắn trên cả 3 trang.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <img class="box-image" src="https://picsum.photos/id/1003/800/500" alt="Dòng sông uốn lượn giữa thung lũng">
+      </div>
+    </section>
+
+    <section class="cards" aria-labelledby="tips">
+      <h2 id="tips" class="sr-only">Mẹo tránh lỗi</h2>
+      <article class="card">
+        <h3>Mẹo cú pháp</h3>
+        <ul>
+          <li>Đừng quên <strong>dấu chấm phẩy</strong> và <strong>ngoặc đóng/mở</strong> trong CSS.</li>
+          <li>Kiểm tra <strong>tên thuộc tính</strong> và <strong>giá trị</strong> (dễ sai chính tả).</li>
+          <li>Đảm bảo đúng <strong>bộ chọn</strong> đã nhắm tới phần tử.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Triển khai</h3>
+        <p>Bạn có thể xuất bản qua GitHub Pages, Replit hoặc Netlify. Tải cả <code>.html</code> và <code>styles.css</code>.</p>
+      </article>
+      <article class="card">
+        <h3>Tính năng nâng cao</h3>
+        <p>Thử <code>prefers-reduced-motion</code> để tắt animation khi người dùng yêu cầu; thêm <code>aria-current="page"</code> cho mục đang xem.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 • WD4E Project</p>
+      <p><a href="https://wave.webaim.org/" target="_blank" rel="noopener">Kiểm tra WAVE</a></p>
+    </div>
+  </footer>
+</body>
+</html>

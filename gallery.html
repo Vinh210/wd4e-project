@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thư viện ảnh (Grid) • WD4E Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <div class="container navbar">
+      <h1>WD4E Project</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gallery.html" aria-current="page">Thư viện ảnh (Grid)</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" tabindex="-1">
+    <h2>Thư viện ảnh (ít nhất 5 ảnh)</h2>
+    <p>Trang này dùng <strong>CSS Grid</strong> cho bố cục. Ảnh sử dụng <code>.box-image</code>, áp dụng <strong>:hover</strong> và <strong>:nth-child()</strong> để thay đổi <em>border-radius</em> các ảnh chẵn/lẻ.</p>
+
+    <div class="gallery" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+      <img class="box-image" src="https://picsum.photos/id/1015/800/600" alt="Núi và dòng sông trong buổi chiều">
+      <img class="box-image" src="https://picsum.photos/id/1016/800/600" alt="Rừng cây phủ sương sớm">
+      <img class="box-image" src="https://picsum.photos/id/1020/800/600" alt="Biển xanh với sóng nhỏ">
+      <img class="box-image" src="https://picsum.photos/id/1024/800/600" alt="Chó con màu trắng nâu">
+      <img class="box-image" src="https://picsum.photos/id/1035/800/600" alt="Vách đá và biển xanh đậm">
+      <img class="box-image" src="https://picsum.photos/id/1043/800/600" alt="Cầu gỗ bắc qua khu rừng">
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 • WD4E Project • <a href="index.html">Về trang chủ</a></p>
+      <p><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a></p>
+    </div>
+  </footer>
+</body>
+</html>
